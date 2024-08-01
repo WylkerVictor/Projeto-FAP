@@ -57,7 +57,7 @@ pedidos.push({nome: nomeCliente, pedido: pedidoCliente})
 }
 function cancelar_pedido(){
     console.log('Lista de pedidos: ', pedidos)
-    let excluirpedido = parseInt(readline.question('Escolha qual tarefa voce deseja excluir: ')) -1;
+    let excluirpedido = parseInt(readline.question('Escolha qual pedido voce deseja excluir: ')) -1;
     if (excluirpedido >= 0 && excluirpedido < pedidos.length) {
     pedidos.splice(excluirpedido, 1)
     console.log('Pedido cancelado')
